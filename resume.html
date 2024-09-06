@@ -1,18 +1,9 @@
-<!--
-  File name: resume.html
-  Author: Jay Pathak
-  Course: CST8285_322
-  Due Date: 7 July 2024
-  Professor: Alem Legesse
-  Purpose: This file serves as the resume page for the personal portfolio website, detailing the user's contact information, career summary, work experience, skills, and education.
--->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume - Jay Pathak</title>
-    <!-- Link to external CSS file for styling -->
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -20,7 +11,6 @@
     <header>
         <nav>
             <ul>
-                <!-- Navigation links to different pages -->
                 <li><a href="index.html">Home</a></li>
                 <li><a href="resume.html" class="active">Resume</a></li>
                 <li><a href="projects.html">Projects</a></li>
@@ -28,70 +18,118 @@
             </ul>
         </nav>
     </header>
+
     <!-- Main content section -->
     <main>
-        <!-- Personal contact information -->
-        <section id="personal-info">
+        <!-- Contact Information -->
+        <section id="contact-info">
             <h2>Contact Information</h2>
+            <p><strong>Name:</strong> Jay Pathak</p>
             <p><strong>Phone:</strong> 613-899-1595</p>
             <p><strong>Email:</strong> <a href="mailto:path0027@algonquinlive.com">path0027@algonquinlive.com</a></p>
-            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/jay-pathak-8465242b1" target="_blank">jay-pathak-8465242b1</a></p>
+            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/jay-pathak-8465242b1" target="_blank">linkedin.com/in/jay-pathak-8465242b1</a></p>
         </section>
-        <!-- Summary or objective -->
-        <section id="summary">
-            <h2>Summary</h2>
-            <p>A dedicated and driven developer seeking to leverage programming and problem-solving skills to contribute to innovative projects.</p>
-        </section>
-        <!-- Educational background -->
+
+        <!-- Education -->
         <section id="education">
             <h2>Education</h2>
-            <p>Computer Programming, Algonquin College, Ottawa, ON (2024 – Present)</p>
-            <p>GPA: 3.35</p>
-            <p>Relevant Coursework: Object-Oriented Programming (Java), Database (SQL), Operating Systems (Windows, Linux), Web Programming (HTML, CSS, JavaScript, PHP), Technical Writing</p>
-        </section>
-        <!-- Skills -->
-        <section id="skills">
-            <h2>Skills</h2>
+            <p><strong>Computer Programming, Algonquin College, Ottawa, ON</strong> (2024 - Present)</p>
             <ul>
-                <li>Java, JavaScript, HTML, CSS</li>
-                <li>SQL, MySQL, PostgreSQL</li>
-                <li>Eclipse, Visual Studio Code</li>
-                <li>Version Control with Git</li>
-                <li>Google Cloud Platform</li>
-                <li>Operating Systems: Knowledge of Windows and Linux</li>
-                <li>Virtualization: Basic understanding and experience with VMWare</li>
+                <li>GPA: 3.35</li>
+                <li>Level 3 at Present</li>
+                <li>Relevant Coursework: Object-Oriented Programming (Java), Database (SQL), Operating Systems (Windows, Linux), Web Programming (HTML, CSS, JavaScript, PHP), Technical Writing.</li>
             </ul>
         </section>
-        <!-- Professional experience -->
-        <section id="experience">
-            <h2>Professional Experience</h2>
-            <p>Junior Developer - Tech Solutions Co. (2024 – Present)</p>
-            <p>Developed multiple web applications, focusing on front-end and back-end integration.</p>
+
+        <!-- Program-Related Skills -->
+        <section id="skills">
+            <h2>Program-Related Skills</h2>
+            <ul>
+                <li><strong>Java:</strong> Intermediate (Developed multiple projects using Eclipse)</li>
+                <li><strong>JavaScript:</strong> Intermediate (Developed interactive web pages with dynamic content)</li>
+                <li><strong>HTML/CSS:</strong> Proficient (Created responsive web designs that are cross-browser compatible)</li>
+                <li><strong>MySQL:</strong> Proficient (Designed and managed relational databases, optimized queries for performance)</li>
+                <li><strong>PostgreSQL:</strong> Proficient (Developed an Airport Management System with a comprehensive database schema)</li>
+                <li><strong>Git/GitHub:</strong> Proficient (Managed version control for projects, collaborated using branching strategies)</li>
+                <li><strong>Operating Systems:</strong> Proficient in Windows and Linux</li>
+                <li><strong>VMWare:</strong> Basic understanding and experience with VMWare (Configured and deployed virtual machines)</li>
+            </ul>
         </section>
-        <!-- Academic projects -->
+
+        <!-- Soft Skills -->
+        <section id="soft-skills">
+            <h2>Soft Skills</h2>
+            <ul>
+                <li>Critical Thinking</li>
+                <li>Adaptability</li>
+                <li>Attention to Detail</li>
+                <li>Time Management</li>
+                <li>Problem-Solving</li>
+                <li>Teamwork</li>
+                <li>Communication</li>
+            </ul>
+        </section>
+
+        <!-- Academic Projects -->
         <section id="projects">
             <h2>Academic Projects</h2>
+            <p><strong>Flight Booking Web Application</strong> - Full-Stack Developer</p>
             <ul>
-                <li>Jan 2023 - Present: Developed and modified web pages using HTML, CSS, and JavaScript; built SQL queries for database management.</li>
-                <li>Feb 2024 - Mar 2024: Developed an Airport Management System using PostgreSQL.</li>
+                <li>Developed a flight booking system with features such as user registration, flight search, booking management using PHP, MySQL, and HTML/CSS.</li>
+                <li>Designed the database schema, implemented security measures like input sanitization, password hashing, and session management.</li>
+                <li>Created an intuitive, responsive UI ensuring cross-browser compatibility.</li>
+            </ul>
+
+            <p><strong>Airline Reservation Management System</strong> - Database Designer and Developer</p>
+            <ul>
+                <li>Developed an Airline Management System using Oracle 19c and MS Access, managing data for airlines, passengers, and crew members.</li>
+                <li>Designed relational schemas, ERDs, and ensured data integrity using SQL triggers and views.</li>
+                <li>Integrated ODBC to connect Oracle database with MS Access for efficient data management.</li>
+            </ul>
+
+            <p><strong>Carbon Monoxide Emissions Data Analysis</strong> - Data Analyst</p>
+            <ul>
+                <li>Analyzed large datasets using MS Excel Pivot Tables to filter and visualize emissions data by facility.</li>
+                <li>Prepared summary reports on emissions trends.</li>
+            </ul>
+
+            <p><strong>Group Assignment (Oracle Database)</strong> - Database Developer</p>
+            <ul>
+                <li>Developed a multi-table Oracle 19c database for airline management, tracking historical data for passengers and crew members.</li>
+                <li>Created triggers, stored procedures, and views for data manipulation and historical tracking.</li>
             </ul>
         </section>
-        <!-- Other work experience -->
-        <section id="other-experience">
-            <h2>Other Work Experience</h2>
-            <p>Manufacturing Associate - Lee Valley Tools, Ottawa, ON (Nov 2019 - Jan 2024)</p>
+
+        <!-- Work Experience -->
+        <section id="work-experience">
+            <h2>Work Experience</h2>
+            <p><strong>Manufacturing Associate, Lee Valley Tools, Ottawa, ON</strong> (Nov 2019 - Jan 2024)</p>
+            <ul>
+                <li>Utilized CAD software to model and analyze parts, improving operational efficiency through detailed tolerance analysis.</li>
+                <li>Developed data-driven solutions by updating SOPs to optimize processes and improve workflow.</li>
+                <li>Collaborated with cross-functional teams to gather data on manufacturing issues and reduce production inefficiencies by 15%.</li>
+            </ul>
         </section>
-        <!-- Volunteer and co-curricular activities -->
+
+        <!-- Volunteer and Co-curricular Activities -->
         <section id="volunteer">
             <h2>Volunteer and Co-curricular Activities</h2>
-            <p>Class Representative - Algonquin College Students' Association, Ottawa (May 2018 - Apr 2019)</p>
+            <p><strong>Class Representative, Algonquin College Students' Association, Ottawa</strong> (May 2018 - Apr 2019)</p>
+            <ul>
+                <li>Collected feedback and proposed solutions to enhance the student experience.</li>
+            </ul>
+        </section>
+
+        <!-- References -->
+        <section id="references">
+            <h2>References</h2>
+            <p>Available upon request.</p>
         </section>
     </main>
+
     <!-- Footer section -->
     <footer>
         <p>© 2024 Jay Pathak. All Rights Reserved.</p>
     </footer>
-    <!-- Link to external JavaScript file for functionality -->
-    <script src="js/script.js"></script>
 </body>
 </html>
