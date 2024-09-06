@@ -1,0 +1,175 @@
+/*
+  File name: styles.css
+  Author: Jay Pathak
+  Course: CST8285_322
+  Due Date: 7 July 2024
+  Professor: Alem Legesse
+  Purpose: This file contains the CSS styles for the personal portfolio website, ensuring a consistent and professional appearance across all pages.
+*/
+
+/* Reset and General Body Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+header nav ul li a.active, header nav ul li a:hover {
+    text-decoration: underline;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Main Content Styles */
+main {
+    width: 80%;
+    max-width: 960px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+main section {
+    margin-bottom: 20px;
+}
+
+main h2 {
+    color: #3498db;
+    border-bottom: 2px solid #dee2e6;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+main p, main li {
+    font-size: 16px;
+    color: #333;
+}
+
+main a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+main a:hover {
+    text-decoration: underline;
+}
+
+/* Profile Image Styling */
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 20px auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.profile-img:hover {
+    transform: scale(1.1);
+}
+
+/* Project Image Styling */
+.project img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.project img:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+/* Button Styling */
+button, .btn {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover, .btn:hover {
+    background-color: #ff6f61;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    clear: both; /* Clearing any floating elements */
+    position: relative; /* Changed from fixed to relative for better content flow */
+    margin-top: 20px; /* Ensures space between content and footer */
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 768px) {
+    header nav ul li {
+        display: block;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    main {
+        width: 95%;
+        padding: 15px;
+    }
+
+    header nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    main h2 {
+        font-size: 20px;
+    }
+
+    main p, main li {
+        font-size: 14px;
+    }
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Form validation message */
+input:invalid, textarea:invalid {
+    border-color: red;
+}
